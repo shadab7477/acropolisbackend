@@ -27,7 +27,7 @@ route.post("/save", userController.save);
 route.post("/login", userController.login);
 
 route.post("/otpverification", userController.otpVerify);
-route.get("/getuser", verifyToken, userController.getUser);
+route.get("/getuser", userController.getUser);
 route.post("/forgotpassword", userController.forgotPassword);
 route.post("/changepassword", userController.changePassword);
 route.post("/sendfeedback", userController.sendFeedback);
